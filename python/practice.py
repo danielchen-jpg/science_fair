@@ -109,3 +109,18 @@ df["Potential_Effect"] = df["Agricultural_Value"] * tariff_rate
 
 print("\nData with modeled effect:")
 print(df)
+
+import matplotlib.pyplot as plt
+
+# Python Practice - Data Visualization
+
+counties = ["Pulaski", "Benton", "Washington", "Craighead"]
+agricultural_values = [1000000, 2500000, 1800000, 3000000]
+
+plt.bar(counties, agricultural_values)
+
+plt.xlabel("County")
+plt.ylabel("Agricultural Value ($)")
+plt.title("Agricultural Value by County")
+
+plt.show()
