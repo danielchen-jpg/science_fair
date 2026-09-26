@@ -59,6 +59,23 @@ for county, exports in agricultural_values.items():
 
     print(county, ":", exposure)
 
+# for loop
+nums = [3, 4, 16]
+ 
+print('This is an example of for loops')
+
+for num in nums:
+   print(num ** 2)
+ 
+# while loop
+i = 3
+
+print('This is an example of while loops')
+
+while i < 258:
+   print(i)
+   i = i ** 2
+
 
 # 7. FUNCTION
 
@@ -124,3 +141,39 @@ plt.ylabel("Agricultural Value ($)")
 plt.title("Agricultural Value by County")
 
 plt.show()
+
+# 9/25/26 Practice from CodeAcademy
+int_value = 4
+print(int_value)
+print(type(int_value))
+
+print()
+
+float_value = float(int_value)
+print(float_value)
+print(type(float_value))
+
+# If, elif, else statements
+score = 70
+ 
+if score >= 80:
+   print('You pass the course with flying colors!')
+ 
+elif score > 65:
+   print('You pass the course! Talk to your instructor.')
+  
+else:
+   print('You do not pass the course!')
+
+# Pass, break, continue
+names = ['Daniel', 'Evan', 'Charlie', 'Riha', 'Jayden', 'Mr.K']
+ 
+for name in names:
+  if 'm' in name.lower():
+      continue
+  elif 'r' in name.lower():
+      pass
+  elif 'j' in name.lower():
+      break
+  else:
+       print(name)
