@@ -199,5 +199,49 @@ def factorial(num):
        call_stack.append({'input': num})
        print('call stack: ', call_stack)
        return num * factorial(num-1)
+
+#Lambda Functions
+
+students = [('Alice', 'A', 15), ('Bob', 'B', 12), ('Charlie', 'A', 20)] 
+sorted_students = sorted(students, key=lambda x: x[2]) 
+
+print(sorted_students) 
+# Prints: [('Bob', 'B', 12), ('Alice', 'A', 15), ('Charlie', 'A', 20)] 
  
 factorial(5)
+
+#Constructors, Class, Objects
+
+class ClassSchedule:
+   def __init__(self, course):
+       self.course = course
+ 
+   def __del__(self):
+       print('You successfully deleted your schedule')
+
+# create a ClassSchedule object
+sched = ClassSchedule('Chemistry')
+# delete the ClassSchedule object
+del sched
+
+#Parent, Child Classes
+
+
+class Person:
+  def __init__(self, name, age):
+      self.name = name
+      self.age = age
+  def print_info(self):
+      print(self.name)
+      print(self.age)
+
+class Teacher(Person):
+  def __init__(self, name, age, subject):
+      self.subject = subject
+
+      Person.__init__(self, name, age)
+
+
+myTeacher = Teacher("Dr. Hirani", 49, "Computer Science")
+myTeacher.print_info()
+print(myTeacher.subject)
